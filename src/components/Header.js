@@ -40,7 +40,7 @@ const [menuOpen, setMenuOpen] = useState(false)
                     </NavItem>
                     <NavItem>
                         <NavLink className="nav-link" to="/contact">
-                            <i className="fa fa-address-card fa-lg" /> Home
+                            <i className="fa fa-address-card fa-lg" /> Contact
                         </NavLink>
                     </NavItem>
                 </Nav>
