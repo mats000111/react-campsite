@@ -3,8 +3,15 @@ import { COMMENTS } from "../../app/shared/COMMENTS";
 
 const initialState = {
     commentsArray: COMMENTS
-}
+};
 
-export const selectCommentsByCampsiteId = (campsiteId) => {
-    return COMMENTS.filter((comment) => comment.campsiteId === parseInt(campsiteId));
+const commentsSlice = createSlice({
+    name: "comments",
+    initialState
+});
+
+export const commentsReducer = commentsSlice.reducer;
+
+export const selectCommentsByCampsiteId = (campsiteId) => (state) => {
+    return state.comments.commentsArray.filter((comment) => comment.campsiteId === parseInt(campsiteId));
 };
