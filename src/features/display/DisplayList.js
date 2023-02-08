@@ -25,7 +25,7 @@ const DisplayList = () => {
                     return <Loading key={idx} />
                 }
                 if (errMsg) {
-                    return <Error errMsg={errMsg} key={id} />
+                    return <Error errMsg={errMsg} key={item.id} />
                 }
                 return (
                     featuredItem && (
